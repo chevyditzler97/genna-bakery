@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('.collage-img');
+    const images = document.querySelectorAll('.collage__img');
     let index = 0;
 
     function showImage() {
         if (index < images.length) {
             images[index].style.display = 'block'; // Show the image
             index++;
-            setTimeout(showImage, 1000); // Change image every second
+            setTimeout(showImage, 800); // Change image every second
         }
     }
 
