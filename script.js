@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('.collage__img');
-    let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".collage__img");
+  let index = 0;
 
-    function showImage() {
-        if (index < images.length) {
-            images[index].style.display = 'block'; // Show the image
-            index++;
-            setTimeout(showImage, 800); // Change image every second
-        }
+  function showImage() {
+    if (index < images.length) {
+      images[index].style.display = "block"; // Show the image
+      index++;
+      setTimeout(showImage, 400); // Change image every second
     }
+  }
 
-    showImage(); // Start the image reveal
+  showImage(); // Start the image reveal
 });
+
+

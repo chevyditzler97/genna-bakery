@@ -1,67 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genna's Underground Confections</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="landing">
-        <nav>
-            <div class="row nav__row">
-                <div class="nav__logo">
-                    <img src="assets/genna logo.png" alt="Genna's Underground Confections" class="nav__logo--img">
-                </div>
-                <div class="nav__container">
-                    <ul class="nav_links">
-                        <li>
-                            <a class="nav__link" href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="#bakery">Bakery</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav id="navi">
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              src="assets/genna logo.png"
+              alt="Genna's Underground Confections"
+              class="nav__logo--img"
+            />
+          </div>
+          <div class="nav__container">
+            <ul class="nav_links">
+              <li>
+                <a class="nav__link" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="nav__link" href="index.html#bakery">Bakery</a>
+              </li>
+              <li>
+                <a class="nav__link" href="index.html#about">About</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="header__description">
-                        <h1>
-                            Home-baked.<br>
-                            Flavor-forward.<br>
-                            Perfectly, imperfect.
-                        </h1>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+              <h1 class="brown">
+                Home-baked.<br />
+                Flavor-forward.<br />
+                Perfectly, imperfect.
+              </h1>
 
-                        <p class="header__description--para">
-                            From handcrafted cupcakes, cookies, and cheesecakes to seasonal favorites and custom creations, every treat is made in small batches and baked fresh to bring people together.
-                        </p>
-                        <button class="header__explore--btn"><a href="#bakery">Explore Our Treats</a></button>
-                    </div>
-                    <div class="collage">
-                        <img src="assets/Apple Cider Cheesecake.jpg" alt="cheesecake" class="collage__img">
-                        <img src="assets/brown sugar cinn swirl cupcakes(1).jpg" alt="cupcake" class="collage__img">
-                        <img src="assets/Choc Chip Cookies.jpg" alt="choc chip cookies" class="collage__img">
-                        <img src="assets/St Pattys cupcakes.jpg" alt="festive cupcakes" class="collage__img">
-                    </div>
-                </div>
+              <p class="header__description--para">
+                From handcrafted cupcakes, cookies, and cheesecakes to seasonal
+                favorites and custom creations, every treat is made in small
+                batches and baked fresh to bring people together.
+              </p>
+              <button class="header__explore--btn">
+                <a href="#bakery">Explore Our Treats</a>
+              </button>
             </div>
-        </header>
+            <div class="collage">
+              <img
+                src="assets/Apple Cider Cheesecake.jpg"
+                alt="cheesecake"
+                class="collage__img"
+              />
+              <img
+                src="assets/brown sugar cinn swirl cupcakes(1).jpg"
+                alt="cupcake"
+                class="collage__img"
+              />
+              <img
+                src="assets/Choc Chip Cookies.jpg"
+                alt="choc chip cookies"
+                class="collage__img"
+              />
+              <img
+                src="assets/St Pattys cupcakes.jpg"
+                alt="festive cupcakes"
+                class="collage__img"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
     </section>
 
     <main>
-        
+      <section id="bakery">
+        <div class="container">
+          <div class="row">
+            <div class="bakery__description">
+              <h2 class="brown">The Bakery</h2>
+              <p class="section__para">Handmade treats crafted with care and the finest ingredients</p>
+            </div>
+            <div class="cards">
+              <a href="cupcakes.html" class="clickable__div">
+                <div class="card">
+                  <img src="assets/St Pattys cupcakes.jpg" alt="" class="card__img">
+                  <h3 class="card__title">Cupcakes</h3>
+                  <p class="card__description">Classic flavors, seasonal favorites, and custom designs for every occasion.</p>
+                </div>
+              </a>
+              <a href="cupcakes.html" class="clickable__div">
+                <div class="card">
+                  <img src="assets/St Pattys cupcakes.jpg" alt="" class="card__img">
+                  <h3 class="card__title">Cheesecakes</h3>
+                  <p class="card__description">Rich, creamy desserts made for sharing.</p>
+                </div>
+              </a>
+              <a href="cupcakes.html" class="clickable__div">
+                <div class="card">
+                  <img src="assets/St Pattys cupcakes.jpg" alt="" class="card__img">
+                  <h3 class="card__title">Cookies</h3>
+                  <p class="card__description">Soft, delicious, and baked fresh in small batches.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
