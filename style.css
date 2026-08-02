@@ -86,8 +86,6 @@ button {
 
 /*NAVIGATION*/
 
-
-
 nav {
   padding-top: 32px;
   display: flex;
@@ -99,7 +97,6 @@ nav {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .nav__logo {
@@ -166,7 +163,6 @@ header .row {
 header a {
   color: white;
 }
-
 
 .header__description {
   width: 50%;
@@ -236,7 +232,6 @@ header a {
 
 /*BAKERY*/
 
-
 #bakery {
   background-color: white;
 }
@@ -275,7 +270,6 @@ header a {
   color: var(--brown);
 }
 
-
 .clickable__div {
   margin-top: 4rem;
   margin-right: 2rem;
@@ -283,23 +277,85 @@ header a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  
-  
 }
-
 
 /*ABOUT*/
 
+.about__title {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 20px;
+}
 
+.section__para--about {
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+}
 
+.spacer {
+  margin-bottom: 20px;
+}
 
+.spacer__x2 {
+  margin-bottom: 80px;
+}
 
+.gif__wrapper {
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
+.gif__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 950px;
+  width: 160px;
+  height: 160px;
+  z-index: -1;
+  display: block;
+  margin-left: 10px;
+  max-width: 100%;
+  margin-top: 20px;
+}
 
+/*FOOTER*/
 
+footer {
+  background: var(--dark);
+}
 
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+footer p {
+  color: white;
+}
 
+.footer__icons {
+  font-size: 2rem;
+}
 
+.footer__link {
+  color: white;
+  margin-right: 16px;
+}
 
-@media
+.footer__link:hover {
+  color: var(--rose);
+}
+
+.allergen p {
+  color: orange;
+  font-weight: bold;
+}
+
+@media;
