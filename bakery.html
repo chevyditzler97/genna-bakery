@@ -32,7 +32,7 @@
                 <a class="nav__link" href="index.html">Home</a>
               </li>
               <li>
-                <a class="nav__link" href="index.html#bakery">Bakery</a>
+                <a class="nav__link" href="bakery.html">Bakery</a>
               </li>
               <li>
                 <a class="nav__link" href="index.html#about">About</a>
@@ -40,6 +40,29 @@
               <li>
                 <a class="nav__link" href="bakery.html#contact">Contact</a>
               </li>
+            </ul>
+
+             <button class="btn__menu" onclick="openMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+             <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="index.html" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="bakery.html" class="menu__link" onclick="closeMenu()">Bakery</a>
+              </li>
+              <li class="menu__list">
+                <a href="index.html#about" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="bakery.html#contact" class="menu__link" onclick="closeMenu()">Contact</a>
+              </li>
+              
             </ul>
           </div>
         </div>
