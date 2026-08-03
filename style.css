@@ -155,7 +155,6 @@ nav {
 
 .menu__list {
   font-size: 40px;
-  
 }
 
 .menu {
@@ -196,8 +195,6 @@ nav {
   overflow-y: hidden;
 }
 
-
-
 .menu__link {
   color: var(--dark);
   font-size: 18px;
@@ -207,8 +204,6 @@ nav {
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
-
-
 
 /*HEADER*/
 
@@ -273,39 +268,28 @@ header a {
   width: 240px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 10px;
+  margin-bottom: 20px;
   display: none;
-  position: absolute;
-  margin: 100px;
+  position: relative;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
 
-.collage__img:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translate(-140%, -140%);
-  margin-top: 50px;
+.collage__sec1 {
+  position: relative;
+  bottom: 40px;
 }
-.collage__img:nth-child(2) {
-  top: 50%;
-  left: 0;
-  transform: translate(-20%, -10%);
+
+.collage__sec2 {
+  position: relative;
+  top: 80px;
 }
-.collage__img:nth-child(3) {
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
-.collage__img:nth-child(4) {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-30%, 60%);
-}
+
+
+
+
 
 /*BAKERY*/
-
-
 
 .cards {
   display: flex;
@@ -323,7 +307,7 @@ header a {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  min-height: 420px;
+  
 }
 
 .card__img {
@@ -346,7 +330,7 @@ header a {
   margin-right: 2rem;
   color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
 }
 
@@ -424,7 +408,6 @@ footer p {
   color: var(--rose);
 }
 
-
 .allergen {
   text-align: center;
 }
@@ -432,6 +415,7 @@ footer p {
   color: orange;
   font-weight: bold;
 }
+
 
 @media (max-width: 1080px) {
   .nav__link {
@@ -447,15 +431,5 @@ footer p {
     align-items: center;
   }
 
-  .header__description {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header__description--para {
-    margin: 20px 0;
-  }
 
 }
