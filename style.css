@@ -269,9 +269,14 @@ header a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  display: none;
+  display: block;
   position: relative;
   opacity: 0;
+  visibility: hidden;
+}
+
+.collage__img.show {
+  visibility: visible;
   animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -416,8 +421,20 @@ footer p {
   font-weight: bold;
 }
 
+@media (max-width:1200px) {
+  h1 {
+    font-size: 48px;
+  }
 
-@media (max-width: 1080px) {
+  .collage__img {
+    height: 200px;
+    width: 200px;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
   .nav__link {
     display: none;
   }
@@ -431,5 +448,35 @@ footer p {
     align-items: center;
   }
 
+  .header__description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .menu--open .menu {
+    max-width: 740px;
+  }
+
+
+
+
+
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .allergen,
+  .copyright,
+  .contact {
+    margin-bottom: 18px;
+  }
 
 }

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showImage() {
     if (index < images.length) {
-      images[index].style.display = "block"; // Show the image
+      images[index].classList.add("show"); 
       index++;
       setTimeout(showImage, 400); // Change image every second
     }
