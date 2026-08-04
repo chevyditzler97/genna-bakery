@@ -360,28 +360,25 @@ header a {
 }
 
 .spacer__x2 {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .gif__wrapper {
-  text-align: left;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 
 .gif__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 950px;
+  position: relative;
   width: 160px;
   height: 160px;
-  z-index: -1;
-  display: block;
-  margin-left: 10px;
+  display: flex;
   max-width: 100%;
-  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 20px;
+  
 }
 
 /*FOOTER*/
@@ -455,13 +452,23 @@ footer p {
   }
 
 
-  .cards {
+  #bakery .row {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column; 
+    max-width: 60%;
+    
   }
 
   .menu--open .menu {
     max-width: 740px;
   }
+
+  
 
 
 
