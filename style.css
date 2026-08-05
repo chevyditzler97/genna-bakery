@@ -468,7 +468,40 @@ footer p {
     max-width: 740px;
   }
 
-  
+  .collage {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .collage__sec1,
+  .collage__sec2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .collage__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    height:  400px;
+    width: 600px;
+    margin-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  }
+
+  .collage__img.active-slide {
+    opacity: 1;
+    visibility: visible;
+  }
 
 
 
