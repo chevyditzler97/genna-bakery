@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < images.length) {
       images[index].classList.add("show"); 
       index++;
-      setTimeout(showImage, 400); // Change image every second
+      setTimeout(showImage, 400);
     }
   }
 
-  showImage(); // Start the image reveal
+  showImage();
 });
 
 
@@ -28,34 +28,39 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = 0;
   let slideInterval = null;
 
-  function showNextSlide() {
-    // Only run carousel logic on mobile screens
-    if (window.innerWidth <= 768) {
-      images.forEach((img, idx) => {
-        if (idx === currentIndex) {
-          img.classList.add("active-slide");
-        } else {
-          img.classList.remove("active-slide");
-        }
-      });
+  function updateSlideshow() {
+    if (window.innerWidth <= 768 && images.length > 0) {
+      
+      images.forEach((img) => img.classList.remove("active-slide"));
 
+      
+      images[currentIndex].classList.add("active-slide");
+
+      
       currentIndex = (currentIndex + 1) % images.length;
     }
   }
 
   function startSlideshow() {
-    if (window.innerWidth <= 768 && !slideInterval) {
-      showNextSlide();
-      slideInterval = setInterval(showNextSlide, 3500); 
-    } else if (window.innerWidth > 768 && slideInterval) {
+    if (window.innerWidth <= 768) {
+      if (!slideInterval) {
+        currentIndex = 0; 
+        updateSlideshow(); 
+        slideInterval = setInterval(updateSlideshow, 3500);
+      }
+    } else {
       
-      clearInterval(slideInterval);
-      slideInterval = null;
+      if (slideInterval) {
+        clearInterval(slideInterval);
+        slideInterval = null;
+      }
       images.forEach((img) => img.classList.remove("active-slide"));
     }
   }
 
-  // Initialize and handle window resize
+  
   startSlideshow();
   window.addEventListener("resize", startSlideshow);
 });
+
+

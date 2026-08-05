@@ -290,10 +290,6 @@ header a {
   top: 80px;
 }
 
-
-
-
-
 /*BAKERY*/
 
 .cards {
@@ -312,7 +308,6 @@ header a {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  
 }
 
 .card__img {
@@ -378,7 +373,6 @@ header a {
   max-width: 100%;
   margin-left: 30px;
   border-radius: 20px;
-  
 }
 
 /*FOOTER*/
@@ -418,7 +412,7 @@ footer p {
   font-weight: bold;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   h1 {
     font-size: 48px;
   }
@@ -427,9 +421,7 @@ footer p {
     height: 200px;
     width: 200px;
   }
-  
 }
-
 
 @media (max-width: 768px) {
   .nav__link {
@@ -451,7 +443,6 @@ footer p {
     flex-direction: column;
   }
 
-
   #bakery .row {
     display: flex;
     flex-direction: column;
@@ -459,9 +450,8 @@ footer p {
   }
 
   .cards {
-    flex-direction: column; 
+    flex-direction: column;
     max-width: 60%;
-    
   }
 
   .menu--open .menu {
@@ -474,6 +464,8 @@ footer p {
     height: 300px;
     margin-top: 40px;
     justify-content: center;
+    max-width: 100%;
+    
   }
 
   .collage__sec1,
@@ -490,23 +482,22 @@ footer p {
     top: 0;
     left: 0;
     border-radius: 20px;
-    height:  400px;
+    height: 400px;
     width: 600px;
+    max-width: 100%;
     margin-bottom: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
     transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  }
   }
 
   .collage__img.active-slide {
     opacity: 1;
     visibility: visible;
+    z-index: 2;
   }
-
-
-
-
-
 
   footer .row {
     flex-direction: column;
@@ -518,5 +509,4 @@ footer p {
   .contact {
     margin-bottom: 18px;
   }
-
 }
