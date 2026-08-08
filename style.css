@@ -443,29 +443,17 @@ footer p {
     flex-direction: column;
   }
 
-  #bakery .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cards {
-    flex-direction: column;
-    max-width: 60%;
-  }
-
   .menu--open .menu {
     max-width: 740px;
   }
 
   .collage {
     position: relative;
-    width: 600px;
+    width: 560px;
     height: 300px;
     margin-top: 40px;
     justify-content: center;
     max-width: 100%;
-    
   }
 
   .collage__sec1,
@@ -483,20 +471,40 @@ footer p {
     left: 0;
     border-radius: 20px;
     height: 400px;
-    width: 600px;
+    width: 560px;
     max-width: 100%;
     margin-bottom: 0;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
-    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+    transition:
+      opacity 0.8s ease-in-out,
+      visibility 0.8s ease-in-out;
   }
+
+  .collage__img.show {
+    animation: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .collage__img.active-slide {
     opacity: 1;
     visibility: visible;
     z-index: 2;
+  }
+
+  #bakery .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 80%;
+    padding-left: 2rem;
   }
 
   footer .row {
@@ -508,5 +516,19 @@ footer p {
   .copyright,
   .contact {
     margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cards {
+    width: 100%;
+  }
+
+  .gif__wrapper {
+    flex-direction: column;
+  }
+
+  .gif__img {
+    margin-left: 0;
   }
 }
